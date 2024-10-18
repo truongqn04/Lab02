@@ -69,7 +69,7 @@ public  class EmployeeAdapter extends  RecyclerView.Adapter<EmployeeAdapter.Empl
             holder.tvFullName.setText(employee.getFullName());
         }
         else holder.tvFullName.setText("");
-        // If this is a manager -> show icon manager. Otherwise, show Staff in tvPosition
+
         if (employee.isManager())
         {
             holder.ivManager.setVisibility(View.VISIBLE);
@@ -81,7 +81,7 @@ public  class EmployeeAdapter extends  RecyclerView.Adapter<EmployeeAdapter.Empl
             holder.tvPosition.setVisibility(View.VISIBLE);
             holder.tvPosition.setText(context.getString(R.string.staff));
         }
-        // Show different color backgrounds for 2 continuous employees
+
         if (position%2==0)
         {
             holder.llParent.setBackgroundResource(R.color.white);

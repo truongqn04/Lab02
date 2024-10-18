@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
                     employee.setManager(false);
                 }
                 employee.setFullName(name);
-                //Đưa employee vào ArrayList
+
                 employees.add(employee);
-                //Cập nhập giao diện
+
                 adapter.notifyDataSetChanged();
             }
         });

@@ -42,18 +42,18 @@ public class MainActivity extends AppCompatActivity {
                 String id = etId.getText().toString();
                 String name = etName.getText().toString();
                 if (radId == R.id.rd_chinhthuc) {
-                    //tạo instance là FullTime
+
                     employee = new EmployeeFulltime();
                 } else {
-                    //Tạo instance là Partime
+
                     employee = new EmployeeParttime();
                 }
-                //FullTime hay Partime thì cũng là Employee nên có các hàm này là hiển nhiên
+
                 employee.setId(id);
                 employee.setName(name);
-                //Đưa employee vào ArrayList
+
                 employees.add(employee);
-                //Cập nhập giao diện
+
                 adapter.notifyDataSetChanged();
             }
         });

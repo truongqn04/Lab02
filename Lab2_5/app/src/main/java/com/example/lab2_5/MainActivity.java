@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         arrayMonan.add(new MonAn("Thumbnail 4", R.drawable.fourth_thumbnail));
         arrayMonan.add(new MonAn("Thumbnail 5", R.drawable.fifth_thumbnail));
 
-        //final List<String> thumbnails = Arrays.asList("cake", "candy", "chocolate", "icecream", "omelette");
         spinnerMonAn = (Spinner) findViewById(R.id.spinner);
 
         spinnerAdapter = new SpinnerAdapter(getApplicationContext(), R.layout.my_dropdown_item, arrayMonan);

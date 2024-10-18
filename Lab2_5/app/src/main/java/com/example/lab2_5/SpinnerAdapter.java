@@ -23,7 +23,7 @@ public class SpinnerAdapter extends BaseAdapter {
     int layout;
     ArrayList<MonAn> arrMonan;
 
-    // Constructor accepts Context (from MainActivity) and a list of state abbreviations
+
 
     public SpinnerAdapter(Context context, int layout, ArrayList<MonAn> arrMonan) {
         this.context = context;
@@ -31,8 +31,6 @@ public class SpinnerAdapter extends BaseAdapter {
         this.arrMonan = arrMonan;
     }
 
-
-    // Override these methods and instead return our custom view (with image and text)
 
     @Override
     public int getCount() {
@@ -54,15 +52,12 @@ public class SpinnerAdapter extends BaseAdapter {
         View row = inflater.inflate(R.layout.my_dropdown_item, parent, false);
 
 
-        // Image and TextViews
         TextView thbName = row.findViewById(R.id.thbnailText);
         ImageView flag = row.findViewById(R.id.thbnailImage);
 
-        // Get flag image from drawables folder
 
         Drawable drawable = context.getResources().getDrawable(arrMonan.get(position).getThumbnail());
 
-        //Set state abbreviation and state flag
         thbName.setText(arrMonan.get(position).getName());
         flag.setImageDrawable(drawable);
 
