@@ -4,7 +4,6 @@ public abstract class Employee {
     private String Id;
     private String Name;
 
-
     public Employee(String id, String name) {
         Id = id;
         Name = name;
@@ -29,8 +28,6 @@ public abstract class Employee {
     public void setName(String name) {
         Name = name;
     }
-
-
 
     public abstract double tinhLuong();
 
